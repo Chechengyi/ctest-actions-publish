@@ -19,6 +19,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '14.17.0'
+        registry-url: 'https://registry.npmjs.org'
     - name: publish to npm
       run: npm publish || true
       env: 
